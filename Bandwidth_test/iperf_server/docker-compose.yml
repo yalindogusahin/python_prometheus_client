@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  web:
+    ports:
+      - "888:888"
+    image: "iperfserver"
+    networks:
+      test:
+        ipv4_address: '172.18.0.2'
+networks:
+  test:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.18.0.0/24
