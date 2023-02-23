@@ -71,6 +71,7 @@ def process_request():
                 max.set(0)
                 ava.set(0)
                 host_status.set(0)
+                portStatus.set(0)
                 
                 
     
